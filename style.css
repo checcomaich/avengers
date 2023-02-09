@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: navy;
+  }
+  title {
+    color: rgb(110, 14, 14);
+  }
+  header {
+    background-color: navy;
+    color: rgb(110, 14, 14);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    color: navy;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: navy;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 0px;
+  }
+  
+  h2 {
+    color: navy;
+    text-align: center;
+  }
+  h3 {
+    color: navy;
+  }
+  section {
+    background-color: rgb(110, 14, 14);
+    padding: 20px;
+  }
+
+  
+  footer {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .film-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .film {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 45px;
+    color: navy;
+  }
+  
+  .film img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  
+  
