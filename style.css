@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: navy;
+    color: white;
+    
   }
   title {
-    color: rgb(110, 14, 14);
+  color: rgb(110, 14, 14);
   }
+
   header {
     background-color: navy;
-    color: rgb(110, 14, 14);
-    padding: 30px;
+    color: white;
+    padding: 20px;
     text-align: center;
   }
   
@@ -26,23 +28,33 @@ body {
     padding: 0;
   }
   
-  nav a {
-    color: navy;
+  nav ul a {
+    color:navy;
     display: block;
     padding: 20px;
     text-decoration: none;
   }
+  ul:hover li a {
+    color: rgb(110, 14, 14);
+  }
+  ul:hover li a:not(:hover){
+    color: navy;
+    opacity: 0.5;
+    filter: blur(0.5px);
+  }
   
   main {
-    padding: 0px;
+    padding: 50px;
+    text-align: left;
+    background-color: rgb(110, 14, 14);
   }
   
   h2 {
-    color: navy;
-    text-align: center;
+    color:white;
+    text-align: left;
   }
   h3 {
-    color: navy;
+    color: white;
   }
   section {
     background-color: rgb(110, 14, 14);
@@ -58,22 +70,23 @@ body {
   }
 
   .film-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
   }
   
   .film {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    margin-bottom: 45px;
-    color: navy;
+    margin-bottom: 20px;
+    color:white;
   }
   
   .film img {
     width: 200px;
     height: 250px;
-    object-fit: cover;
+    object-fit: scale-down;
   }
   
   
