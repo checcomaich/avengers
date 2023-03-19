@@ -1,27 +1,56 @@
+@font-face {
+  font-family: 'marvelfont';
+  src: url(font/marvel/heroesassemble3d.ttf);
+  }
+@font-face {
+  font-family: "paragrafi";
+  src: url(font/marvel/heroesassembleboldexpand2.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: ;
     background-color: white;
     color: white;
+    margin: 0px;
     
   }
-  title {
-  color: rgb(110, 14, 14);
-  }
-
-  header {
-    background-color: navy;
+  .title {
+    font-family: 'marvelfont';
+    font-size: 3.5rem;;
     color: white;
-    padding: 20px;
+  }
+  
+  header {
+    font-family: 'marvelfont';
+    background-color: rgb(124, 42, 42);
+    color: white;
+    padding-bottom: 15px;
     text-align: center;
+    width: 100%;
   }
   
   h1 {
+    font-family: 'marvelfont';
     margin: 0;
   }
-  
+  h2 {
+    font-family: 'paragrafi';
+    color:white;
+    text-align: left;
+  }
+  h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+
   nav ul {
-    color: navy;
+
+    border: 2px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -29,41 +58,61 @@ body {
   }
   
   nav ul a {
-    color:navy;
-    display: block;
-    padding: 20px;
+    font-family: 'paragrafi';
+    color:black;
+    display: flex;
+    padding: 15px;
     text-decoration: none;
   }
-  ul:hover li a {
-    color: rgb(110, 14, 14);
+  nav ul:hover li a {
+    color: black;
   }
-  ul:hover li a:not(:hover){
-    color: navy;
+  nav ul:hover li a:not(:hover){
+    color: black;
     opacity: 0.5;
     filter: blur(0.5px);
   }
+ 
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  nav ul li:hover > .submenu {
+    display: block;
+  }
   
+  nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    background-color: #fff;
+  }
+  
+  nav ul .submenu li {
+    color: navy;
+    display: block;
+  }
   main {
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 50px;
     text-align: left;
-    background-color: rgb(110, 14, 14);
+    background-color: rgb(15, 14, 14);
   }
-  
-  h2 {
-    color:white;
-    text-align: left;
-  }
-  h3 {
+  main a{
     color: white;
-  }
-  section {
-    background-color: rgb(110, 14, 14);
-    padding: 20px;
+    text-decoration: none;
   }
 
+  section {
+    background-color: rgb(9, 9, 9);
+    padding: 20px;
+  }
   
   footer {
-    background-color: navy;
+    font-family: 'paragrafi';
+    background-color: rgb(124, 42, 42);
     color: white;
     padding: 20px;
     text-align: center;
@@ -73,21 +122,147 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     flex-wrap: wrap;
-    gap: 20px;
+    gap : 70px;
   }
   
   .film {
+    font-family:'Roboto Condensed',sans-serif;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     color:white;
   }
   
   .film img {
     width: 200px;
-    height: 250px;
-    object-fit: scale-down;
+    height: 300px;
   }
   
-  
-  
+@media (max-width: 768px) {
+  .slider,.film-container,.film1-container,.film,.film1,.menu,.submenu,.hero-image,.title {
+    width: 100%;
+  }
+
+@media (min-width: 1200px) {
+  .slider,.film-container,.film1-container,.film,.film1,.menu,.submenu,.hero-image,.title {
+    width: 80%;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+}
+
+
+.menu {
+  display: block;
+  width: 100%;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu a:hover {
+  background-color: #f2f2f2;
+}
+/*tendina*/
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.menu .submenu li {
+  position: relative;
+}
+
+.menu .submenu a {
+  padding: 8px 20px;
+}
+
+.menu .submenu a:hover {
+  background-color: #f2f2f2
+}
+/*foto backgroud*/
+.hero-image {
+  background-image: url('img/fotona.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 120%;
+}
+
+.hero-text {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+  color: white;
+}
+
+/*slide*/
+#slider ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#slider li {
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 300px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#slider img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+#slider {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+#slider::-webkit-scrollbar {
+  width: 2px;
+}
+
+#slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#slider::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#slider::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+

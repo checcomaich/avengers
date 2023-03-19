@@ -2,58 +2,144 @@
 <html>
   <head>
     <title>Film Marvel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="jpeg" href="img/simble.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
 
   </head>
-  <body>
+  <body >
     <header>
       <h1 class="title">Avengers</h1>
     </header>
-    <nav>
+  
+    <nav class="menu">
       <ul>
         <li><a href="index.html">Homepage</a></li>
-        <li><a href="Avengers.html">Avengers</a></li>
-        <li><a href="Spider-Man.html">Spider-Man</a></li>
-        <li><a href="antagonisti.html">Antagonisti</a></li>
-        <li><a href="merch.html">Merchandising</a></li>
-        <li><a href="contact.html">Contatti</a></li>
+        <li>
+          <a href="pag/Avengers.html">Avengers</a>
+          <ul class="submenu">
+            <li><a href="pag/iron-man.html">Iron Man</a></li>
+            <li><a href="pag/captain-america.html">Captain America</a></li>
+            <li><a href="pag/thor.html">Thor</a></li>
+            <li><a href="pag/hulk.html">Hulk</a></li>
+            <li><a href="pag/black-widow.html">Black Widow</a></li>
+            <li><a href="pag/hawkeye.html">Hawkeye</a></li>
+            <li><a href="pag/wanda.html">Wanda Maximoff</a></li>
+          </ul>
+        </li>
+        <li><a href="pag/Spider-Man.html">Spider-Man</a></li>
+        <li><a href="pag/antagonisti.html">Antagonisti</a></li>
+        <li><a href="pag/merch.html">Merchandising</a></li>
+        <li><a href="pag/contact.html">Contatti</a></li>
       </ul>
-    </nav>
+    </nav> 
     <main>
-      <section id="sium">
-        <h2>Marvel Cinematic Universe</h2>
-        <p>Il Marvel Cinematic Universe (MCU) è un franchise di film basato sui personaggi della Marvel Comics. Ecco un elenco dei film MCU:</p>
-        <section>
-          <div class="film-container">
-  
-          <div class="film">
-          <h3 id="Ant-man & the wasp quantumania">Ant-man & the wasp quantumania (2023)</h3>
-          <img src="img/antman.jpeg" alt="Copertina film Iron Man (2008)">
-          <p>Interpretato da Robert Downey Jr. come Tony Stark/Iron-Man</p>
+    <section id="sium">
+      <div class="hero-image">
+      <div class="hero-text">
+      <h2>Marvel Cinematic Universe</h2>
+      <p >Benvenuti nel mondo dell'Universo Cinematografico Marvel, una dimensione dove supereroi e cattivi si scontrano in un'epica battaglia per il destino dell'umanità.
+        Questo sito è dedicato a tutti gli appassionati dell'MCU, 
+        dove potrete trovare tutte le ultime notizie, curiosità, sui principali film del franchise, 
+        oltre a teorie e spoiler sui film e le serie TV in uscita.
+        Da Iron Man a Spider-Man: No Way Home, dall'Avengers originale a Avengers: Endgame,
+         il nostro sito offre una copertura completa delle trame e dei personaggi    
+        Inoltre, su questo sito troverete guide dettagliate sui personaggi dell'MCU, compresi i loro poteri, 
+        la loro storia, le loro origini e le loro relazioni con gli altri personaggi dell'universo. Potrete anche partecipare alle discussioni della comunità, scambiare teorie,
+        scoprire e condividere curiosità sulle riprese e sulla produzione dei film e delle serie TV.
+        Vi invitiamo a unirvi alla nostra comunità e a immergervi nel mondo dell'Universo Cinematografico Marvel. 
+        Siamo entusiasti di condividere questa avventura con voi e di esplorare insieme ogni angolo di questo universo cinematografico unico nel suo genere</p>
+       </div>
+      </div>
+       
+      <h2>Ultime uscite e in Arrivo!</h2>
+      <section>
+        <div class="film-container">
+          <div id="slider">
+            <ul>
+              <li>
+                <img src="./img/groot.jpg" alt="1" />
+              </li>
+              <li>
+                <img src="./img/whatif.jpg" alt="2" />
+              </li>
+              <li>
+                <img src="./img/secretwars.jpg" alt="4" />
+              </li>
+              <li>
+                <img src="./img/antman.jpg" alt="5" />
+              </li>
+              <li>
+                <img src="./img/capneworder.jpeg" alt="6" />
+              </li>
+            </ul>
           </div>
-  
-          <div class="film">
-          <h3 id="What if">What if? (2023)</h3>
-          <img src="img/whatif.jpeg" alt="Copertina film Iron Man 2 (2010)">
-          <p>Interpretato da Robert Downey Jr. come Tony Stark/Iron-Man</p>
-          </div>
-  
-          <div class="film">
-          <h3 id="Secret wars">Secret Wars (2023)</h3>
-          <img src="img/secretwars.jpeg" alt="Copertina film Iron Man 3 (2013)">
-          <p>Interpretato da Robert Downey Jr. come Tony Stark/Iron-Man</p>
-          </div>
-  
-          <div class="film">
-            <h3 id="Guardiani della Galassia Vol 3">Secret Wars (2023)</h3>
-            <img src="img/groot.jpeg" alt="Copertina film Iron Man 3 (2013)">
-            <p>Interpretato da Robert Downey Jr. come Tony Stark/Iron-Man</p>
-            </div>
-          </div>
-          </section>
-        <hr>
+        </div>
       </section>
-     
+
+      <h2>personaggi</h2>
+      <section>
+        <div class="film-container">
+          <div id="slider">
+            <ul>
+              <li>
+                <a href="pag/iron-man.html" target="_blank">
+                  <img src="./img/tony-stark.jpeg" alt="Iron Man" />
+                  <h3>Iron Man</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/captain-america.html" target="_blank">
+                  <img src="./img/steve-rogers.jpeg" alt="Captain America" />
+                  <h3>Captain America</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/thor.html" target="_blank">
+                  <img src="./img/thor.jpeg" alt="Thor" />
+                  <h3>Thor</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/hulk.html" target="_blank">
+                  <img src="./img/hulk.jpeg" alt="Hulk" />
+                  <h3>Hulk</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/hawkeye.html" target="_blank">
+                  <img src="./img/hawkeye-.jpeg" alt="Hawkeye" />
+                  <h3>hawkeye</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/black-widow.html" target="_blank">
+                  <img src="./img/Blackwidow.jpeg" alt="black-widow" />
+                  <h3>black-widow</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/Black-panther.html" target="_blank">
+                  <img src="./img/blackpanther.jpeg" alt="Black-panther" />
+                  <h3>Black-panther</h3>
+                </a>
+              </li>
+              <li>
+                <a href="pag/Strange.html" target="_blank">
+                  <img src="./img/dcstrange.jpeg" alt="Dc.Strange" />
+                  <h3>Dc.Strange</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      
+
     </main>
     <footer>
       <p>&copy; 2023 Film Marvel</p>
